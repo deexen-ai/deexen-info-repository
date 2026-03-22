@@ -1,11 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
-
 export default function Careers() {
   return (
     <div className="bg-[#f8f7f4] min-h-screen selection:bg-[#447794]/20">
-
       <main className="min-h-[calc(100vh-64px)] flex items-center pt-16 pb-12 px-12">
         <div className="max-w-[1200px] mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div className="animate-[fadeUp_0.8s_ease_0.35s_forwards] opacity-0">
@@ -43,7 +40,6 @@ export default function Careers() {
           </div>
         </div>
       </main>
-
     </div>
   );
 }
