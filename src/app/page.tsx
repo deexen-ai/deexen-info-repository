@@ -162,7 +162,7 @@ export default function Home() {
     <>
 
       {/* HERO */}
-      <section id="home" className="hero relative min-h-screen flex flex-col items-center justify-center text-center px-6 py-32 overflow-hidden">
+      <section id="home" className="hero relative min-h-screen flex flex-col items-center justify-center text-center px-6 md:px-12 py-32 overflow-hidden">
         <ParticleCanvas />
 
         <div className="hero-eyebrow inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.12em] uppercase text-[#447794] border border-[rgba(68,119,148,0.12)] px-3.5 py-1.5 rounded-full bg-[rgba(68,119,148,0.05)] mb-10 opacity-0 translate-y-3 animate-[fadeUp_0.7s_ease_0.2s_forwards]">
@@ -178,16 +178,16 @@ export default function Home() {
           Code, debug, deploy — all inside one intelligent environment. AI that observes your work in real time and guides you exactly when you need it.
         </p>
 
-        <div className="flex items-center gap-3 opacity-0 translate-y-4 animate-[fadeUp_0.8s_ease_0.65s_forwards]">
-            <button onClick={openModal} className="btn-primary-alt bg-[#447794] text-white px-7 py-3.5 rounded-full text-[15px] font-medium no-underline inline-flex items-center gap-2 hover:opacity-90 transition-all tracking-[-0.01em] border-none cursor-pointer shadow-[0_4px_12px_rgba(68,119,148,0.25)]">
+        <div className="flex flex-col sm:flex-row items-center gap-3 opacity-0 translate-y-4 animate-[fadeUp_0.8s_ease_0.65s_forwards]">
+            <button onClick={openModal} className="w-full sm:w-auto btn-primary-alt bg-[#447794] text-white px-7 py-3.5 rounded-full text-[15px] font-medium no-underline inline-flex items-center justify-center gap-2 hover:opacity-90 transition-all tracking-[-0.01em] border-none cursor-pointer shadow-[0_4px_12px_rgba(68,119,148,0.25)]">
               Request Early Access
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </button>
-          <a href="#how" className="btn-secondary bg-transparent text-[#52525b] px-6 py-3.5 rounded-full text-[15px] font-normal no-underline border border-[rgba(68,119,148,0.12)] hover:text-[#0e0d0b] hover:border-[rgba(68,119,148,0.25)] transition-all tracking-[-0.01em]">See how it works</a>
+          <a href="#how" className="w-full sm:w-auto btn-secondary bg-transparent text-[#52525b] px-6 py-3.5 rounded-full text-[15px] font-normal no-underline border border-[rgba(68,119,148,0.12)] hover:text-[#0e0d0b] hover:border-[rgba(68,119,148,0.25)] transition-all tracking-[-0.01em] inline-flex items-center justify-center">See how it works</a>
         </div>
 
         {/* IDE MOCKUP */}
-        <div className="hero-mockup mt-20 w-full max-w-[1100px] rounded-2xl border border-[rgba(68,119,148,0.12)] bg-[#111110] overflow-hidden shadow-[0_32px_80px_rgba(0,0,0,0.12),0_0_0_1px_rgba(255,255,255,0.05)] opacity-0 translate-y-6 animate-[fadeUp_1s_ease_0.8s_forwards]">
+        <div className="hero-mockup hidden lg:flex flex-col aspect-video mt-20 w-full max-w-[1100px] rounded-2xl border border-[rgba(68,119,148,0.12)] bg-[#111110] overflow-hidden shadow-[0_32px_80px_rgba(0,0,0,0.12),0_0_0_1px_rgba(255,255,255,0.05)] opacity-0 translate-y-6 animate-[fadeUp_1s_ease_0.8s_forwards]">
           <div className="mockup-bar bg-[#1a1918] px-5 py-3.5 flex items-center gap-3 border-b border-[rgba(255,255,255,0.05)]">
             <div className="traffic-lights flex gap-1.5">
               <div className="tl w-2.5 h-2.5 rounded-full bg-[#ff5f57]"></div>
@@ -201,7 +201,7 @@ export default function Home() {
               <div className="mtab font-mono text-[11px] text-[rgba(255,255,255,0.3)] px-3.5 py-1 rounded">deploy.yml</div>
             </div>
           </div>
-          <div className="mockup-body grid grid-cols-[200px_1fr_260px] h-[580px]">
+          <div className="mockup-body grid grid-cols-[200px_1fr_260px] flex-1">
             <div className="mockup-sidebar bg-[#161614] border-r border-[rgba(255,255,255,0.04)] py-4 text-left">
               <div className="sidebar-section px-4 mb-4">
                 <div className="sidebar-label font-mono text-[10px] tracking-[0.1em] uppercase text-[rgba(255,255,255,0.2)] mb-2">Explorer</div>
@@ -233,7 +233,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mockup-editor px-6 py-5 font-mono text-[13px] leading-[1.7] text-[rgba(255,255,255,0.75)] overflow-hidden relative text-left">
+            <div className="mockup-editor flex-1 px-4 sm:px-6 py-5 font-mono text-[13px] leading-[1.7] text-[rgba(255,255,255,0.75)] overflow-x-auto relative text-left">
               <div><span className="ln text-[rgba(255,255,255,0.15)] inline-block w-6 select-none">1</span> <span className="cm text-[rgba(255,255,255,0.25)]">// Deexen AI — analyzing structure...</span></div>
               <div><span className="ln text-[rgba(255,255,255,0.15)] inline-block w-6 select-none">2</span></div>
               <div><span className="ln text-[rgba(255,255,255,0.15)] inline-block w-6 select-none">3</span> <span className="kw text-[#c792ea]">import</span> <span className="op text-[#89ddff]">{'{'} Request, Response {'}'}</span> <span className="kw text-[#c792ea]">from</span> <span className="str text-[#c3e88d]">{'express'}</span></div>
@@ -251,12 +251,10 @@ export default function Home() {
                 </div>
               </div>
               <div><span className="ln text-[rgba(255,255,255,0.15)] inline-block w-6 select-none">12</span> &nbsp; <span className="kw text-[#c792ea]">if</span> (exists) <span className="kw text-[#c792ea]">return</span> res.<span className="fn text-[#82aaff]">status</span>(<span className="num text-[#f78c6c]">409</span>).<span className="fn text-[#82aaff]">json</span>(<span className="op text-[#89ddff]">{'{'}…{'}'}</span>)</div>
-              <div><span className="ln text-[rgba(255,255,255,0.15)] inline-block w-6 select-none">13</span></div>
               <div><span className="ln text-[rgba(255,255,255,0.15)] inline-block w-6 select-none">14</span> &nbsp; <span className="kw text-[#c792ea]">try</span> <span className="op text-[#89ddff]">{'{'}</span></div>
               <div><span className="ln text-[rgba(255,255,255,0.15)] inline-block w-6 select-none">15</span> &nbsp; &nbsp; <span className="kw text-[#c792ea]">const</span> newUser = <span className="kw text-[#c792ea]">await</span> db.<span className="fn text-[#82aaff]">user</span>.<span className="fn text-[#82aaff]">create</span>(<span className="op text-[#89ddff]">{'{'}</span></div>
               <div><span className="ln text-[rgba(255,255,255,0.15)] inline-block w-6 select-none">16</span> &nbsp; &nbsp; &nbsp; data<span className="op text-[#89ddff]">:</span> <span className="op text-[#89ddff]">{'{'}</span> email, name <span className="op text-[#89ddff]">{'}'}</span></div>
               <div><span className="ln text-[rgba(255,255,255,0.15)] inline-block w-6 select-none">17</span> &nbsp; &nbsp; <span className="op text-[#89ddff]">{'}'}</span>)</div>
-              <div><span className="ln text-[rgba(255,255,255,0.15)] inline-block w-6 select-none">18</span></div>
               <div><span className="ln text-[rgba(255,255,255,0.15)] inline-block w-6 select-none">19</span> &nbsp; &nbsp; <span className="kw text-[#c792ea]">return</span> res.<span className="fn text-[#82aaff]">status</span>(<span className="num text-[#f78c6c]">201</span>).<span className="fn text-[#82aaff]">json</span>(newUser)</div>
               <div><span className="ln text-[rgba(255,255,255,0.15)] inline-block w-6 select-none">20</span> &nbsp; <span className="op text-[#89ddff]">{'}'}</span> <span className="kw text-[#c792ea]">catch</span> (error) <span className="op text-[#89ddff]">{'{'}</span></div>
               <div><span className="ln text-[rgba(255,255,255,0.15)] inline-block w-6 select-none">21</span> &nbsp; &nbsp; <span className="kw text-[#c792ea]">return</span> res.<span className="fn text-[#82aaff]">status</span>(<span className="num text-[#f78c6c]">500</span>).<span className="fn text-[#82aaff]">json</span>(<span className="op text-[#89ddff]">{'{'}</span> message<span className="op text-[#89ddff]">:</span> <span className="str text-[#c3e88d]">{'Internal Error'}</span> <span className="op text-[#89ddff]">{'}'}</span>)</div>
@@ -264,7 +262,7 @@ export default function Home() {
               <div><span className="ln text-[rgba(255,255,255,0.15)] inline-block w-6 select-none">23</span> <span className="op text-[#89ddff]">{'}'}</span></div>
             </div>
 
-            <div className="mockup-ai-panel bg-[#131312] border-l border-[rgba(255,255,255,0.04)] flex flex-col p-4 gap-2.5 overflow-hidden">
+            <div className="mockup-ai-panel flex-[260px] bg-[#131312] border-l border-[rgba(255,255,255,0.04)] flex flex-col p-4 gap-2.5 overflow-hidden">
               <div className="ai-panel-header font-mono text-[10px] tracking-[0.1em] uppercase text-[rgba(45,91,117,0.7)] flex items-center gap-1.5 mb-1">
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><circle cx="5" cy="5" r="4" fill="rgba(45,91,117,0.6)" /></svg>
                 Deexen Intelligence
@@ -273,13 +271,10 @@ export default function Home() {
                 Detected duplicate email scenario — added uniqueness check before insert.
               </div>
               <div className="ai-bubble assistant bg-[rgba(45,91,117,0.1)] rounded-lg p-3 text-[12px] text-[rgba(255,255,255,0.75)] leading-[1.55] border border-[rgba(45,91,117,0.15)]">
-                <strong className="text-[rgba(45,91,117,0.9)] font-medium">Suggestion:</strong> Add rate limiting to this endpoint. High-frequency signups can indicate abuse. Want me to scaffold it?<span className="typing-cursor inline-block w-1.5 h-3 bg-[#2D5B75] align-middle ml-0.5 rounded-sm animate-[blink_1s_step-end_infinite]"></span>
-              </div>
-              <div className="ai-bubble assistant bg-[rgba(45,91,117,0.1)] rounded-lg p-3 text-[12px] text-[rgba(255,255,255,0.75)] leading-[1.55] border border-[rgba(45,91,117,0.15)]">
-                <strong className="text-[rgba(45,91,117,0.9)] font-medium">Performance:</strong> The query on line 11 could be optimized with a selective index on the `email` field.
+                <strong className="text-[rgba(45,91,117,0.9)] font-medium">Suggestion:</strong> Add rate limiting to this endpoint.
               </div>
               <div className="ai-bubble mt-auto bg-[rgba(255,255,255,0.02)] rounded-lg p-3 border border-[rgba(255,255,255,0.04)]">
-                <span className="text-[rgba(255,255,255,0.2)] text-[11px] font-mono tracking-[0.06em]">DEPLOY READY · 0 errors · 1 warning</span>
+                <span className="text-[rgba(255,255,255,0.2)] text-[11px] font-mono tracking-[0.06em]">DEPLOY READY · 0 errors</span>
               </div>
             </div>
           </div>
@@ -287,10 +282,10 @@ export default function Home() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="how bg-white border-t border-b border-[rgba(68,119,148,0.12)] py-30 px-12" id="how">
+      <section className="how bg-white border-t border-b border-[rgba(68,119,148,0.12)] py-20 md:py-30 px-6 md:px-12" id="how">
         <div className="max-w-[1100px] mx-auto">
-          <div className="flex justify-between items-end mb-18 reveal">
-            <div>
+          <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-12 md:mb-18 reveal">
+            <div className="mb-8 md:mb-0">
               <p className="section-label font-mono text-[11px] tracking-[0.12em] uppercase text-[#8fb6cc] mb-4">How it works</p>
               <h2 className="section-title font-serif text-[clamp(36px,4.5vw,58px)] font-normal leading-[1.1] tracking-[-0.02em] text-[#0e0d0b] max-w-[640px]">
                 From code to deploy,<br /><em className="italic text-[#447794]">without switching tabs</em>
@@ -299,8 +294,8 @@ export default function Home() {
             <p className="how-desc text-[16px] text-[#52525b] max-w-[360px] leading-[1.65] font-light">Deexen AI unifies every layer of your development workflow into a single intelligent environment. No more tool-hopping.</p>
           </div>
 
-          <div className="steps grid grid-cols-3 gap-px bg-[rgba(68,119,148,0.12)] border border-[rgba(68,119,148,0.12)] rounded-2xl overflow-hidden reveal">
-            <div className="step bg-white p-10 relative hover:bg-[#f8f7f4] transition-colors">
+          <div className="steps grid grid-cols-1 md:grid-cols-3 gap-px bg-[rgba(68,119,148,0.12)] border border-[rgba(68,119,148,0.12)] rounded-2xl overflow-hidden reveal">
+            <div className="step bg-white p-6 md:p-10 relative hover:bg-[#f8f7f4] transition-colors">
               <div className="step-num font-mono text-[11px] text-[#8fb6cc] tracking-[0.08em] mb-6">01</div>
               <div className="step-icon w-10 h-10 rounded-[10px] bg-[rgba(68,119,148,0.05)] border border-[rgba(68,119,148,0.12)] flex items-center justify-center mb-5">
                 <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" className="w-4.5 h-4.5 text-[#0e0d0b]">
@@ -310,7 +305,7 @@ export default function Home() {
               <h3 className="font-sans text-[17px] font-medium text-[#0e0d0b] tracking-[-0.02em] mb-2.5">Write code naturally</h3>
               <p className="text-[14px] text-[#52525b] leading-[1.65] font-light">Open your project and write code as you normally would. Deexen observes your logic, structure, and patterns in real time — no prompting required.</p>
             </div>
-            <div className="step bg-white p-10 relative hover:bg-[#f8f7f4] transition-colors">
+            <div className="step bg-white p-6 md:p-10 relative hover:bg-[#f8f7f4] transition-colors">
               <div className="step-num font-mono text-[11px] text-[#8fb6cc] tracking-[0.08em] mb-6">02</div>
               <div className="step-icon w-10 h-10 rounded-[10px] bg-[rgba(68,119,148,0.05)] border border-[rgba(68,119,148,0.12)] flex items-center justify-center mb-5">
                 <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" className="w-4.5 h-4.5 text-[#0e0d0b]">
@@ -320,7 +315,7 @@ export default function Home() {
               <h3 className="font-sans text-[17px] font-medium text-[#0e0d0b] tracking-[-0.02em] mb-2.5">AI guides in context</h3>
               <p className="text-[14px] text-[#52525b] leading-[1.65] font-light">Contextual suggestions, error explanations, and architectural guidance appear inline — tied directly to what you&apos;re building right now.</p>
             </div>
-            <div className="step bg-white p-10 relative hover:bg-[#f8f7f4] transition-colors">
+            <div className="step bg-white p-6 md:p-10 relative hover:bg-[#f8f7f4] transition-colors">
               <div className="step-num font-mono text-[11px] text-[#8fb6cc] tracking-[0.08em] mb-6">03</div>
               <div className="step-icon w-10 h-10 rounded-[10px] bg-[rgba(68,119,148,0.05)] border border-[rgba(68,119,148,0.12)] flex items-center justify-center mb-5">
                 <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" className="w-4.5 h-4.5 text-[#0e0d0b]">
@@ -335,7 +330,7 @@ export default function Home() {
       </section>
 
       {/* FEATURES */}
-      <section id="features" className="py-30 px-12 bg-[#f8f7f4]">
+      <section id="features" className="py-20 md:py-30 px-6 md:px-12 bg-[#f8f7f4]">
         <div className="features max-w-[1100px] mx-auto">
           <div className="features-header mb-18 reveal">
             <p className="section-label font-mono text-[11px] tracking-[0.12em] uppercase text-[#8fb6cc] mb-4">Capabilities</p>
@@ -344,9 +339,9 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="feat-grid grid grid-cols-3 gap-6">
+          <div className="feat-grid grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Large card */}
-            <div className="feat-card large col-span-3 grid grid-cols-2 gap-10 bg-white border border-[rgba(68,119,148,0.12)] rounded-2xl p-10 relative overflow-hidden hover:shadow-[0_12px_40px_rgba(0,0,0,0.07)] hover:-translate-y-0.5 transition-all before:content-[''] before:absolute before:top-0 before:right-0 before:w-30 before:h-30 before:bg-[radial-gradient(circle_at_top_right,rgba(74,108,247,0.06),transparent_70%)] before:pointer-events-none reveal">
+            <div className="feat-card large md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 bg-white border border-[rgba(68,119,148,0.12)] rounded-2xl p-6 sm:p-10 relative overflow-hidden hover:shadow-[0_12px_40px_rgba(0,0,0,0.07)] hover:-translate-y-0.5 transition-all before:content-[''] before:absolute before:top-0 before:right-0 before:w-30 before:h-30 before:bg-[radial-gradient(circle_at_top_right,rgba(74,108,247,0.06),transparent_70%)] before:pointer-events-none reveal">
               <div>
                 <div className="feat-icon w-11 h-11 rounded-[11px] bg-[rgba(68,119,148,0.05)] border border-[rgba(68,119,148,0.12)] flex items-center justify-center mb-5">
                   <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" className="w-5 h-5 text-[#0e0d0b]">
@@ -396,7 +391,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="feat-card bg-white border border-[rgba(68,119,148,0.12)] rounded-2xl p-10 hover:shadow-[0_12px_40px_rgba(0,0,0,0.07)] hover:-translate-y-0.5 transition-all relative overflow-hidden before:content-[''] before:absolute before:top-0 before:right-0 before:w-30 before:h-30 before:bg-[radial-gradient(circle_at_top_right,rgba(74,108,247,0.06),transparent_70%)] before:pointer-events-none reveal">
+            <div className="feat-card bg-white border border-[rgba(68,119,148,0.12)] rounded-2xl p-6 sm:p-10 hover:shadow-[0_12px_40px_rgba(0,0,0,0.07)] hover:-translate-y-0.5 transition-all relative overflow-hidden before:content-[''] before:absolute before:top-0 before:right-0 before:w-30 before:h-30 before:bg-[radial-gradient(circle_at_top_right,rgba(74,108,247,0.06),transparent_70%)] before:pointer-events-none reveal">
               <div className="feat-icon w-11 h-11 rounded-[11px] bg-[rgba(68,119,148,0.05)] border border-[rgba(68,119,148,0.12)] flex items-center justify-center mb-5">
                 <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" className="w-5 h-5 text-[#0e0d0b]">
                   <path d="M10 2C5.6 2 2 5.6 2 10s3.6 8 8 8 8-3.6 8-8" /><path d="M14 2l4 4-4 4M18 6h-6" />
@@ -407,7 +402,7 @@ export default function Home() {
               <span className="feat-tag inline-flex items-center gap-1.5 font-mono text-[11px] text-[#2D5B75] bg-[rgba(45,91,117,0.07)] px-2.5 py-1 rounded-full mt-4 border border-[rgba(45,91,117,0.12)]">One-click operations</span>
             </div>
 
-            <div className="feat-card bg-white border border-[rgba(68,119,148,0.12)] rounded-2xl p-10 hover:shadow-[0_12px_40px_rgba(0,0,0,0.07)] hover:-translate-y-0.5 transition-all relative overflow-hidden before:content-[''] before:absolute before:top-0 before:right-0 before:w-30 before:h-30 before:bg-[radial-gradient(circle_at_top_right,rgba(74,108,247,0.06),transparent_70%)] before:pointer-events-none reveal">
+            <div className="feat-card bg-white border border-[rgba(68,119,148,0.12)] rounded-2xl p-6 sm:p-10 hover:shadow-[0_12px_40px_rgba(0,0,0,0.07)] hover:-translate-y-0.5 transition-all relative overflow-hidden before:content-[''] before:absolute before:top-0 before:right-0 before:w-30 before:h-30 before:bg-[radial-gradient(circle_at_top_right,rgba(74,108,247,0.06),transparent_70%)] before:pointer-events-none reveal">
               <div className="feat-icon w-11 h-11 rounded-[11px] bg-[rgba(68,119,148,0.05)] border border-[rgba(68,119,148,0.12)] flex items-center justify-center mb-5">
                 <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" className="w-5 h-5 text-[#0e0d0b]">
                   <rect x="3" y="3" width="14" height="14" rx="2" /><path d="M7 10h6M10 7v6" />
@@ -418,7 +413,7 @@ export default function Home() {
               <span className="feat-tag inline-flex items-center gap-1.5 font-mono text-[11px] text-[#2D5B75] bg-[rgba(45,91,117,0.07)] px-2.5 py-1 rounded-full mt-4 border border-[rgba(45,91,117,0.12)]">Domain connection included</span>
             </div>
 
-            <div className="feat-card bg-white border border-[rgba(68,119,148,0.12)] rounded-2xl p-10 hover:shadow-[0_12px_40px_rgba(0,0,0,0.07)] hover:-translate-y-0.5 transition-all relative overflow-hidden before:content-[''] before:absolute before:top-0 before:right-0 before:w-30 before:h-30 before:bg-[radial-gradient(circle_at_top_right,rgba(74,108,247,0.06),transparent_70%)] before:pointer-events-none reveal">
+            <div className="feat-card bg-white border border-[rgba(68,119,148,0.12)] rounded-2xl p-6 sm:p-10 hover:shadow-[0_12px_40px_rgba(0,0,0,0.07)] hover:-translate-y-0.5 transition-all relative overflow-hidden before:content-[''] before:absolute before:top-0 before:right-0 before:w-30 before:h-30 before:bg-[radial-gradient(circle_at_top_right,rgba(74,108,247,0.06),transparent_70%)] before:pointer-events-none reveal">
               <div className="feat-icon w-11 h-11 rounded-[11px] bg-[rgba(68,119,148,0.05)] border border-[rgba(68,119,148,0.12)] flex items-center justify-center mb-5">
                 <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" className="w-5 h-5 text-[#0e0d0b]">
                   <path d="M4 16l4-4 3 3 5-7" /><circle cx="16" cy="5" r="2" />
@@ -443,12 +438,12 @@ export default function Home() {
           <p className="cta-sub text-[16px] font-light text-[rgba(255,255,255,0.45)] leading-[1.65] mb-12">
             We&apos;re building towards a fully intelligent development ecosystem — where coding, learning, version control, and deployment all live inside one connected platform. AI as an active partner, not a passive chatbot.
           </p>
-          <div className="cta-actions flex items-center justify-center gap-3">
-            <button onClick={openModal} className="btn-primary-alt bg-[#447794] text-white px-7 py-3.5 rounded-full text-[15px] font-medium no-underline inline-flex items-center gap-2 hover:opacity-90 transition-all tracking-[-0.01em] border-none cursor-pointer shadow-[0_4px_12px_rgba(68,119,148,0.25)]">
+          <div className="cta-actions flex flex-col sm:flex-row items-center justify-center gap-3">
+            <button onClick={openModal} className="w-full sm:w-auto btn-primary-alt bg-[#447794] text-white px-7 py-3.5 rounded-full text-[15px] font-medium no-underline inline-flex items-center justify-center gap-2 hover:opacity-90 transition-all tracking-[-0.01em] border-none cursor-pointer shadow-[0_4px_12px_rgba(68,119,148,0.25)]">
               Request Early Access
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </button>
-            <a href="#" className="btn-ghost bg-transparent text-[rgba(255,255,255,0.7)] px-6 py-3.5 rounded-full text-[15px] font-normal no-underline border border-[rgba(255,255,255,0.15)] hover:text-white hover:border-[#447794] hover:bg-[rgba(68,119,148,0.05)] transition-all tracking-[-0.01em]">For teams & enterprises</a>
+            <a href="mailto:deexenaiofficial@gmail.com?subject=Teams%20%26%20Enterprises" className="w-full sm:w-auto btn-ghost bg-transparent text-[rgba(255,255,255,0.7)] px-6 py-3.5 rounded-full text-[15px] font-normal no-underline border border-[rgba(255,255,255,0.15)] hover:text-white hover:border-[#447794] hover:bg-[rgba(68,119,148,0.05)] transition-all tracking-[-0.01em] inline-flex items-center justify-center">For teams & enterprises</a>
           </div>
         </div>
       </section>

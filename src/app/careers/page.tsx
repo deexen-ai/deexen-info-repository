@@ -3,10 +3,10 @@
 export default function Careers() {
   return (
     <div className="bg-[#f8f7f4] min-h-screen selection:bg-[#447794]/20">
-      <main className="min-h-[calc(100vh-64px)] flex items-center pt-16 pb-12 px-12">
-        <div className="max-w-[1200px] mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+      <main className="min-h-[calc(100vh-64px)] flex items-center pt-24 pb-16 px-6 md:px-12">
+        <div className="max-w-[1200px] mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
           <div className="animate-[fadeUp_0.8s_ease_0.35s_forwards] opacity-0">
-            <div className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.12em] uppercase text-[#447794] border border-[rgba(68,119,148,0.12)] px-3.5 py-1.5 rounded-full bg-[rgba(68,119,148,0.05)] mb-8">
+            <div className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.12em] uppercase text-[#447794] border border-[rgba(68,119,148,0.12)] px-3.5 py-1.5 rounded-full bg-[rgba(68,119,148,0.05)] mb-6 md:mb-8">
               Careers at Deexen
             </div>
             
@@ -29,8 +29,8 @@ export default function Careers() {
             </div>
 
             <a 
-              href="mailto:careers@deexen.com?subject=I'm%20the%20right%20fit%20for%20Deexen" 
-              className="inline-flex items-center gap-3 bg-[#447794] text-white px-10 py-5 rounded-full text-[17px] font-medium no-underline hover:opacity-90 hover:-translate-y-1 transition-all shadow-[0_20px_40px_rgba(68,119,148,0.2)]"
+              href="mailto:deexenaiofficial@gmail.com?subject=Careers%20Inquiry" 
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#447794] text-white px-8 py-4 sm:px-10 sm:py-5 rounded-full text-[17px] font-medium no-underline hover:opacity-90 hover:-translate-y-1 transition-all shadow-[0_20px_40px_rgba(68,119,148,0.2)]"
             >
               Write to us
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
