@@ -1,0 +1,45 @@
+{
+  "object": "database",
+  "id": "307c8c36-1dd5-80e7-93ea-e501a14951cd",
+  "title": [
+    {
+      "type": "text",
+      "text": {
+        "content": "Waitlist Signups",
+        "link": null
+      },
+      "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+      },
+      "plain_text": "Waitlist Signups",
+      "href": null
+    }
+  ],
+  "description": [],
+  "parent": {
+    "type": "workspace",
+    "workspace": true
+  },
+  "is_inline": false,
+  "in_trash": false,
+  "is_locked": false,
+  "created_time": "2026-02-14T23:44:45.792+00:00",
+  "last_edited_time": "2026-03-09T14:46:31.273+00:00",
+  "data_sources": [
+    {
+      "id": "307c8c36-1dd5-80d5-910d-000b0f4dd99b",
+      "name": "Waitlist Signups"
+    }
+  ],
+  "icon": null,
+  "cover": null,
+  "url": "https://www.notion.so/307c8c361dd580e793eae501a14951cd",
+  "public_url": null,
+  "archived": false,
+  "request_id": "fd2ed977-14ba-4af6-bd35-b2a4f97080d2"
+}
