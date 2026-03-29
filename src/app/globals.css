@@ -15,8 +15,8 @@
   --color-pill-bg: rgba(68, 119, 148, 0.05);
   --color-card-bg: #ffffff;
   
-  --font-serif: 'Instrument Serif', Georgia, serif;
-  --font-sans: 'DM Sans', sans-serif;
+
+  --font-sans: 'SF Pro Display', system-ui, sans-serif;
   --font-mono: 'DM Mono', monospace;
 }
 
@@ -34,8 +34,8 @@
   --border: rgba(68, 119, 148, 0.12);
   --pill-bg: rgba(68, 119, 148, 0.05);
   --card-bg: #ffffff;
-  --serif: 'Instrument Serif', Georgia, serif;
-  --sans: 'DM Sans', sans-serif;
+
+  --sans: var(--font-sans), system-ui, sans-serif;
   --mono: 'DM Mono', monospace;
 }
 

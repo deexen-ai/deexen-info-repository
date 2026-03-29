@@ -10,7 +10,7 @@ export default function Careers() {
               Careers at Deexen
             </div>
             
-            <h1 className="font-serif text-[clamp(48px,5.5vw,72px)] font-normal leading-[1.05] tracking-[-0.02em] text-[#0e0d0b]">
+            <h1 className="font-bold tracking-tight text-[clamp(48px,5.5vw,72px)] leading-[1.05] text-[#0e0d0b]">
               Build the future,<br /><em className="italic text-[#447794]">from India to the world.</em>
             </h1>
           </div>

@@ -170,7 +170,7 @@ export default function Home() {
           Intelligent Development Platform
         </div>
 
-        <h1 className="font-serif text-[clamp(52px,7vw,96px)] font-normal leading-[1.05] tracking-[-0.02em] text-[#0e0d0b] max-w-[820px] mb-7 opacity-0 translate-y-4 animate-[fadeUp_0.8s_ease_0.35s_forwards]">
+        <h1 className="font-bold tracking-tight text-[clamp(52px,7vw,96px)] leading-[1.05] text-[#0e0d0b] max-w-[820px] mb-7 opacity-0 translate-y-4 animate-[fadeUp_0.8s_ease_0.35s_forwards]">
           The IDE that thinks<br /><em className="italic text-[#447794]">while you build</em>
         </h1>
 
@@ -287,7 +287,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-12 md:mb-18 reveal">
             <div className="mb-8 md:mb-0">
               <p className="section-label font-mono text-[11px] tracking-[0.12em] uppercase text-[#8fb6cc] mb-4">How it works</p>
-              <h2 className="section-title font-serif text-[clamp(36px,4.5vw,58px)] font-normal leading-[1.1] tracking-[-0.02em] text-[#0e0d0b] max-w-[640px]">
+              <h2 className="section-title font-bold tracking-tight text-[clamp(36px,4.5vw,58px)] leading-[1.1] text-[#0e0d0b] max-w-[640px]">
                 From code to deploy,<br /><em className="italic text-[#447794]">without switching tabs</em>
               </h2>
             </div>
@@ -334,7 +334,7 @@ export default function Home() {
         <div className="features max-w-[1100px] mx-auto">
           <div className="features-header mb-18 reveal">
             <p className="section-label font-mono text-[11px] tracking-[0.12em] uppercase text-[#8fb6cc] mb-4">Capabilities</p>
-            <h2 className="section-title font-serif text-[clamp(36px,4.5vw,58px)] font-normal leading-[1.1] tracking-[-0.02em] text-[#0e0d0b] max-w-[640px]">
+            <h2 className="section-title font-bold tracking-tight text-[clamp(36px,4.5vw,58px)] leading-[1.1] text-[#0e0d0b] max-w-[640px]">
               One platform.<br /><em className="italic text-[#447794]">Every tool you need.</em>
             </h2>
           </div>
@@ -429,10 +429,10 @@ export default function Home() {
 
       {/* VISION / CTA */}
       <section className="cta-section bg-[#0e0d0b] text-center py-30 px-12 relative overflow-hidden" id="cta">
-        <div className="cta-bg-text absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-serif text-[clamp(80px,14vw,200px)] font-normal text-[rgba(255,255,255,0.03)] whitespace-nowrap pointer-events-none select-none tracking-[-0.04em]">Deexen</div>
+        <div className="cta-bg-text absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold tracking-tight text-[clamp(80px,14vw,200px)] text-[rgba(255,255,255,0.03)] whitespace-nowrap pointer-events-none select-none">Deexen</div>
         <div className="cta-inner relative z-10 max-w-[680px] mx-auto">
           <p className="cta-label font-mono text-[11px] tracking-[0.12em] uppercase text-[rgba(255,255,255,0.3)] mb-6">The long-term vision</p>
-          <h2 className="cta-title font-serif text-[clamp(40px,5vw,64px)] font-normal leading-[1.1] tracking-[-0.02em] text-white mb-5">
+          <h2 className="cta-title font-bold tracking-tight text-[clamp(40px,5vw,64px)] leading-[1.1] text-white mb-5">
             Tools should adapt<br /><em className="italic text-[rgba(255,255,255,0.5)]">to developers</em>
           </h2>
           <p className="cta-sub text-[16px] font-light text-[rgba(255,255,255,0.45)] leading-[1.65] mb-12">

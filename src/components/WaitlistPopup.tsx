@@ -21,7 +21,7 @@ export default function WaitlistPopup() {
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
               </svg>
             </div>
-            <h3 className="font-serif text-[32px] font-normal leading-tight text-[#0e0d0b] mb-3">Request Early Access</h3>
+            <h3 className="font-semibold tracking-tight text-[32px] leading-tight text-[#0e0d0b] mb-3">Request Early Access</h3>
             <p className="text-[15px] text-[#52525b] mb-8 font-light">Be the first to build with the most intelligent development ecosystem. We&apos;ll notify you locally.</p>
             <form onSubmit={handleSubmit} className="flex flex-col gap-3">
               <input 
@@ -57,7 +57,7 @@ export default function WaitlistPopup() {
                 <polyline points="20 6 9 17 4 12" />
               </svg>
             </div>
-            <h3 className="font-serif text-[32px] font-normal leading-tight text-[#0e0d0b] mb-3">You&apos;re on the list!</h3>
+            <h3 className="font-semibold tracking-tight text-[32px] leading-tight text-[#0e0d0b] mb-3">You&apos;re on the list!</h3>
             <p className="text-[15px] text-[#52525b] mb-8 font-light">Thank you for your interest. We&apos;ll reach out to <strong>{email}</strong> when we&apos;re ready to onboard you.</p>
             <button 
               onClick={closeModal}

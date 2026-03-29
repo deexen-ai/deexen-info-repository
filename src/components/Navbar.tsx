@@ -48,10 +48,10 @@ export default function Navbar() {
       {/* Mobile Menu Overlay */}
       <div className={`fixed inset-0 bg-[#f8f7f4] z-[90] transition-transform duration-500 ease-in-out md:hidden flex flex-col pt-24 px-8 ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
         <ul className="flex flex-col gap-8 list-none p-0">
-          <li><Link href="/#how" onClick={closeMenu} className="text-[24px] font-serif text-[#0e0d0b] no-underline">How it works</Link></li>
-          <li><Link href="/#features" onClick={closeMenu} className="text-[24px] font-serif text-[#0e0d0b] no-underline">Features</Link></li>
-          <li><Link href="/#cta" onClick={closeMenu} className="text-[24px] font-serif text-[#0e0d0b] no-underline">Vision</Link></li>
-          <li><Link href="/careers" onClick={closeMenu} className="text-[24px] font-serif text-[#0e0d0b] no-underline">Careers</Link></li>
+          <li><Link href="/#how" onClick={closeMenu} className="text-[24px] font-medium text-[#0e0d0b] no-underline">How it works</Link></li>
+          <li><Link href="/#features" onClick={closeMenu} className="text-[24px] font-medium text-[#0e0d0b] no-underline">Features</Link></li>
+          <li><Link href="/#cta" onClick={closeMenu} className="text-[24px] font-medium text-[#0e0d0b] no-underline">Vision</Link></li>
+          <li><Link href="/careers" onClick={closeMenu} className="text-[24px] font-medium text-[#0e0d0b] no-underline">Careers</Link></li>
         </ul>
         <div className="mt-auto pb-12">
           <button 
