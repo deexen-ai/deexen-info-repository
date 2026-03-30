@@ -16,7 +16,7 @@ const certificates: Record<string, {
 }> = {
   "dxn-2025-0047": {
     name: "Abbu Ganesh",
-    role: "Backend Developer Intern",
+    role: "Machine Learning Intern",
     status: "Verified",
     certificateId: "DXN-2025-0047",
     issueDate: "March 2024",
