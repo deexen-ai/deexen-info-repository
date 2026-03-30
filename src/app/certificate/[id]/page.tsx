@@ -19,7 +19,7 @@ const certificates: Record<string, {
     role: "Machine Learning Intern",
     status: "Verified",
     certificateId: "DXN-2025-0047",
-    issueDate: "March 2026",
+    issueDate: "January 2026",
   },
 };
 
