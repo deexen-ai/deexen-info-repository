@@ -21,6 +21,13 @@ const certificates: Record<string, {
     certificateId: "DXN-2025-0047",
     issueDate: "January 2026",
   },
+  "dxn-2025-0001": {
+    name: "Ravi Pratap Singh",
+    role: "Frontend Lead Developer",
+    status: "Verified",
+    certificateId: "DXN-2025-0001",
+    issueDate: "April 2026",
+  },
 };
 
 export default async function CertificateVerificationPage({
